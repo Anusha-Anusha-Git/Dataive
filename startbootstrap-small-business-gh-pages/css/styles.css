@@ -1295,16 +1295,16 @@ progress {
   }
   .col-lg-5 {
     flex: 0 0 auto;
-    width: 41.66666667%;
-  }
+    width: 58.33333333%; /* 7 of 12 columns */
+}
   .col-lg-6 {
     flex: 0 0 auto;
     width: 50%;
   }
   .col-lg-7 {
     flex: 0 0 auto;
-    width: 58.33333333%;
-  }
+    width: 41.66666667%; /* 5 of 12 columns */
+}
   .col-lg-8 {
     flex: 0 0 auto;
     width: 66.66666667%;
