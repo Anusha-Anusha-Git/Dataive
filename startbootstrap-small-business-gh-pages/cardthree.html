@@ -1,106 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pneumonia Detection with Python</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <style>
-    body {
-      background: #f4f7fa;
-      font-family: 'Segoe UI', sans-serif;
-    }
-    .header {
-      background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-      color: white;
-      padding: 60px 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    .header h1 {
-      font-size: 2.5rem;
-      font-weight: bold;
-    }
-    .card-section {
-      background: white;
-      border-radius: 12px;
-      padding: 40px;
-      margin-top: -30px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
-    }
-    .section-title {
-      font-weight: 600;
-      margin-top: 30px;
-      margin-bottom: 15px;
-    }
-    .feature-icon {
-      color: #0d6efd;
-      margin-right: 10px;
-    }
-    ul li {
-      margin-bottom: 8px;
-    }
-    .project-img {
-      max-height: 400px;
-      object-fit: cover;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    }
-    .btn-custom {
-      border-radius: 50px;
-      padding: 10px 24px;
-    }
-  </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Details of our AI Project" />
+    <meta name="author" content="" />
+    <title>AI Project Details</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .project-detail-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .project-header {
+            padding: 40px 0;
+            text-align: center;
+        }
+        .project-image {
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        .feature-list {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .tech-specs {
+            background-color: #e9ecef;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-
-  <!-- Header -->
-  <div class="container mt-5">
-    <div class="header">
-      <h1>🩺 Pneumonia Detection with Python</h1>
-      <p class="lead mt-2">AI-powered Chest X-ray Diagnosis System</p>
-    </div>
-  </div>
-
-  <!-- Main Content -->
-  <div class="container card-section mt-4 mb-5">
     
-    <!-- Description -->
-    <p>
-      This deep learning project detects pneumonia from chest X-ray images using Convolutional Neural Networks (CNNs).
-      Designed to assist radiologists and healthcare professionals, it offers a quick and efficient second opinion
-      in diagnosing pneumonia cases.
-    </p>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container px-5">
+            <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">Services</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <!-- Features -->
-    <h4 class="section-title"><i class="fas fa-star feature-icon"></i>Key Features</h4>
-    <ul>
-      <li><i class="fas fa-check-circle text-success"></i> Real-time prediction from X-ray images</li>
-      <li><i class="fas fa-check-circle text-success"></i> High accuracy CNN-based classification</li>
-      <li><i class="fas fa-check-circle text-success"></i> Easy-to-use upload and result interface</li>
-      <li><i class="fas fa-check-circle text-success"></i> Visualizations of model confidence & output</li>
-    </ul>
+    <div class="container py-5">
+        <div class="project-detail-container">
+            <div class="project-header">
+                <h1 class="mb-3">Intelligent Customer Support Chatbot</h1>
+                <p class="lead">Revolutionizing customer service with AI-powered solutions</p>
+            </div>
 
-    <!-- Technologies -->
-    <h4 class="section-title"><i class="fas fa-tools feature-icon"></i>Technologies Used</h4>
-    <ul>
-      <li><i class="fas fa-laptop-code text-primary"></i> Python, TensorFlow & Keras for model training</li>
-      <li><i class="fas fa-brain text-primary"></i> CNN architecture for image classification</li>
-      <li><i class="fas fa-image text-primary"></i> OpenCV for image pre-processing</li>
-      <li><i class="fas fa-chart-line text-primary"></i> Matplotlib & Seaborn for visualization</li>
-      <li><i class="fas fa-server text-primary"></i> Flask for backend API</li>
-      <li><i class="fas fa-layer-group text-primary"></i> Bootstrap 5 for frontend design</li>
-    </ul>
+            <img src="assets/chatbot.jpg" alt="AI Project" class="img-fluid project-image">
 
-    <!-- Back Button -->
-    <div class="text-center mt-4">
-      <a href="index.html" class="btn btn-outline-primary btn-custom">
-        ← Back to Home
-      </a>
+            <div class="mb-4">
+                <h3>Project Overview</h3>
+                <p>Our AI-powered chatbot revolutionizes customer service by providing instant, accurate responses to customer inquiries 24/7. Built with advanced Natural Language Processing (NLP) algorithms, it understands complex queries and maintains conversation context.</p>
+                <p>The system handles over 10,000 queries daily with 95% accuracy, reducing response times by 80% compared to traditional support systems.</p>
+            </div>
+
+            <div class="feature-list">
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Real-time sentiment analysis to gauge customer satisfaction</li>
+                    <li>Multi-language support for global customer bases</li>
+                    <li>Seamless integration with CRM platforms like Salesforce and HubSpot</li>
+                    <li>Continuous learning from interactions to improve responses</li>
+                    <li>Automated ticket escalation for complex issues</li>
+                    <li>24/7 availability with no downtime</li>
+                </ul>
+            </div>
+
+            <div class="tech-specs">
+                <h3>Technical Specifications</h3>
+                <p><strong>Framework:</strong> Python, TensorFlow<br>
+                <strong>NLP Engine:</strong> BERT-based model<br>
+                <strong>Deployment:</strong> Cloud-based microservices architecture<br>
+                <strong>Accuracy:</strong> 95% query resolution rate<br>
+                <strong>Response Time:</strong> Average 1.2 seconds per query<br>
+                <strong>Integration:</strong> REST API for easy connection to existing systems</p>
+            </div>
+
+            <a href="index.html" class="btn btn-primary back-btn">
+                &larr; Back to Home
+            </a>
+        </div>
     </div>
-  </div>
 
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
